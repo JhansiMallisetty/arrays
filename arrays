@@ -1,0 +1,212 @@
+1)package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	var intArray [5]int
+	var strArray [5]string
+
+	fmt.Println(reflect.ValueOf(intArray).Kind())
+	fmt.Println(reflect.ValueOf(strArray).Kind())
+}
+
+
+array
+array
+
+Program exited.
+
+2)package main
+
+import "fmt"
+
+func main() {
+	var theArray [3]string
+	theArray[0] = "Jhansi"  
+	theArray[1] = "srujana" 
+	theArray[2] = "Navya"  
+
+	fmt.Println(theArray[0]) 
+	fmt.Println(theArray[1]) 
+	fmt.Println(theArray[2]) 
+}
+
+
+Jhansi
+srujana
+Navya
+
+Program exited.
+
+3)package main
+
+import "fmt"
+
+func main() {
+	x := [5]int{10, 20, 30, 40, 50}   
+	  var y [5]int = [5]int{10, 20, 30} 
+
+	fmt.Println(x)
+	fmt.Println(y)
+}
+
+[10 20 30 40 50]
+[10 20 30 0 0]
+
+Program exited.
+
+4)package main
+
+import (
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	x := [...]int{10, 10, 10}
+
+	fmt.Println(reflect.ValueOf(x).Kind())
+	fmt.Println(len(x))
+}
+
+array
+3
+
+Program exited.
+
+5)package main
+
+import "fmt"
+
+func main() {
+	x := [6]int{1: 10, 3: 30}
+	fmt.Println(x)
+}
+[0 10 0 30 0 0]
+
+Program exited.
+
+
+6)package main
+
+import "fmt"
+
+func main() {
+
+	strArray1 := [3]string{"Jhansi", "suji", "navya"}
+	strArray2 := strArray1  
+        strArray3 := &strArray1 
+	fmt.Printf("strArray1: %v\n", strArray1)
+        fmt.Printf("strArray2: %v\n", strArray2)	
+
+        strArray1[0] = "navya"
+  
+	fmt.Printf("strArray1: %v\n", strArray1)
+	fmt.Printf("strArray2: %v\n", strArray2)	
+	fmt.Printf("*strArray3: %v\n", *strArray3)	
+}
+
+
+strArray1: [Jhansi suji navya]
+strArray2: [Jhansi suji navya]
+strArray1: [navya suji navya]
+strArray2: [Jhansi suji navya]
+*strArray3: [navya suji navya]
+
+Program exited.
+
+7)package main 
+  
+import "fmt"
+  
+func main() { 
+
+array:= []string{"j","h","a","n","s","i"} 
+  
+
+fmt.Println("Elements of the array:") 
+
+for i:=0;i<len(array);i++{ 
+fmt.Println(array[i]) 
+} 
+  
+}
+
+Elements of the array:
+j
+h
+a
+n
+s
+i
+
+8)package main 
+  
+import "fmt"
+  
+func main() { 
+  
+var arr[5]int 
+fmt.Println("no. of elements in array :", arr) 
+  
+} 
+
+
+no. of elements in array : [0 0 0 0 0]
+
+Program exited.
+
+9)package main 
+  
+import "fmt"
+  
+func main() { 
+  
+    
+arr:= []int{1,2,3,4,5} 
+ 
+  
+ 
+fmt.Println("Length of the array 1 is:", len(arr)) 
+
+} 
+
+
+Length of the array 1 is: 5
+
+Program exited.
+
+10)package main
+
+
+import (
+	"fmt"
+)
+
+func main() {
+	var jhansi[4] string
+	
+	jhansi[0]="j"
+	jhansi[1]="h"
+	jhansi[2]="a"
+	jhansi[3]="n"
+	fmt.Println("element 1 in var is :",jhansi[0])
+	fmt.Println("element 2 in var is :",jhansi[1])
+	fmt.Println("element 3 in var is :",jhansi[2])
+	fmt.Println("element 4 in var is :",jhansi[3])
+	
+}
+
+
+
+element 1 in var is : j
+element 2 in var is : h
+element 3 in var is : a
+element 4 in var is : n
+
+Program exited.
+
+
